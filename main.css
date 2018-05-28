@@ -1,0 +1,46 @@
+body{
+    background-image: url("bin/Background.png")
+}
+
+#header{
+    background-color: black;
+    margin-top: 10;
+    height: 110;
+}
+#about
+{
+    font-size: 30;
+    background-color: teal;
+    border-color: white;
+    position: relative;top: -85;
+}
+#projects
+{
+    font-size: 30;
+    background-color: teal;
+    border-color: white;
+    position: relative;top: -85;
+}
+#resume
+{
+    font-size: 30;
+    background-color: teal;
+    border-color: white;
+    position: relative;top: -85;
+}
+#personal
+{
+    font-size: 30;
+    background-color: teal;
+    border-color: white;
+    position: relative;top: -85;
+}
+#middle
+{
+    margin-left: 550;
+    margin-right: 550;
+    padding-top: 250;
+    padding-bottom: 250;
+    background-color: black;
+}
+

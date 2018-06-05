@@ -438,3 +438,37 @@ nav a:hover
    /*/////////////////////////////////*/
 
 
+/*Footer*/
+@media screen and (max-width: 736px)
+ {
+    .footer
+    {
+        padding: 3rem 0 1rem 0;
+    }
+}
+.footer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100px;
+    background: rgba(85, 214, 170, .85);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0 0 0;
+    
+}
+
+.footer li
+{
+    margin-left: 10px;
+}
+
+.copyright
+{
+    text-align: center;
+}

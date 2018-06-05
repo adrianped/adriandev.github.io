@@ -5,7 +5,7 @@ body
     background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    display: flex;
+    position: relative;
 }
 
 :root
@@ -269,10 +269,9 @@ nav a:hover
     }
 }
 .footer{
-    position: fixed;
+    position: absolute;
     bottom:0;
-    left:0;
-    right:0;
+    width: 100%;
     height:100px;
     background: rgba(85, 214, 170, .85);
 }

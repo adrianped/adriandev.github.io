@@ -126,7 +126,7 @@ nav a:hover
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 1300px)
+@media screen and (min-width: 1550px)
 {
     .nav-toggle-label
     {
@@ -197,15 +197,14 @@ nav a:hover
     padding: 10%;
     flex: 1 1 80%;
     min-height: 100vh;
+    margin-left: 250px;
+    margin-right: 250px;
+    
 }
 
 .portfolio
 {
-    display: grid;
     height: 100%;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
 }
 
 .portfolio-item 
@@ -218,98 +217,9 @@ nav a:hover
     align-items: center;
   }
 
-
-/*Portfolio Small Tile*/
-  .portfolio-item.small
-  {
-    grid-row: span 3;
-    grid-column: span 1;
-    background-image: url(bin/Background.png);
-    text-shadow: 0,0 5px rgba(0, 0, 0, .05);
-    color: white;
-    background-size: cover;
-    background-position: top left;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
-  }
-  .portfolio-item.small::before
-  {
-    content: '';
-    display: block;
-    background-color: #353535;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    transition: all ease-in-out 300ms; 
-    z-index: 0;
-  }
-
-  .portfolio-item.small:hover::before
-  {
-    opacity: 0.2;
-  }
-
-  .portfolio-item.small:hover
-  {
-    background-blend-mode: none;
-    background-position: center;
-    color: transparent;  
-  }
-  
-  /*//////////////////////*/
-
-  /*Portfolio Medium Tile*/
-  .portfolio-item.medium 
-  {
-    grid-row: span 3;
-    grid-column: span 2;
-    background-image: url(bin/Background.png);
-    text-shadow: 0,0 5px rgba(0, 0, 0, .05);
-    color: white;
-    background-size: cover;
-    background-position: top left;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
-  }
-  .portfolio-item.medium::before
-  {
-    content: '';
-    display: block;
-    background-color: #353535;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    transition: all ease-in-out 300ms; 
-    z-index: 0;
-  }
-
-  .portfolio-item.medium:hover::before
-  {
-    opacity: 0.2;
-  }
-
-  .portfolio-item.medium:hover
-  {
-    background-blend-mode: none;
-    background-position: center;
-    color: transparent;
-    
-  }
-  /*//////////////////////*/
-
   /*Portfolio Large Tile*/
   .portfolio-item.large
   {
-    grid-row: span 3;
-    grid-column: span 3;
     background-image: url(bin/Background.png);
     text-shadow: 0,0 5px rgba(0, 0, 0, .05);
     color: white;
@@ -318,13 +228,13 @@ nav a:hover
     transition: all ease-in-out 300ms;
     position: relative;
     z-index: 10;
+    padding: 250px 250px 250px 250px;
   }
   
 
   .portfolio-item.large::before
   {
     content: '';
-    display: block;
     background-color: #353535;
     opacity: 0.8;
     position: absolute;
@@ -348,95 +258,7 @@ nav a:hover
     color: transparent;
     
   }
-  /*/////////////////////////////////*/
-
-  /*Portfolio Tall Tile*/
-  .portfolio-item.tall
-  {
-    grid-row: span 8;
-    grid-column: span 2;
-    background-image: url(bin/Background.png);
-    text-shadow: 0,0 5px rgba(0, 0, 0, .05);
-    color: white;
-    background-size: cover;
-    background-position: top left;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
-  }
-  .portfolio-item.tall::before
-  {
-    content: '';
-    display: block;
-    background-color: #353535;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    transition: all ease-in-out 300ms; 
-    z-index: 0;
-  }
-
-  .portfolio-item.tall:hover::before
-  {
-    opacity: 0.2;
-  }
-
-  .portfolio-item.tall:hover
-  {
-    background-blend-mode: none;
-    background-position: center;
-    color: transparent;
-    
-  }
-   /*/////////////////////////////////*/
-
-   /*Portfolio Wide Tile*/
-  .portfolio-item.wide
-  {
-    grid-row: span 5;
-    grid-column: span 3;
-    background-image: url(bin/Background.png);
-    text-shadow: 0,0 5px rgba(0, 0, 0, .05);
-    color: white;
-    background-size: cover;
-    background-position: top left;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
-    
-  }
-  .portfolio-item.wide::before
-  {
-    content: '';
-    display: block;
-    background-color: #353535;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    transition: all ease-in-out 300ms; 
-    z-index: 0;
-  }
-
-  .portfolio-item.wide:hover::before
-  {
-    opacity: 0.2;
-  }
-
-  .portfolio-item.wide:hover
-  {
-    background-blend-mode: none;
-    background-position: center;
-    color: transparent;
-    
-  }
-   /*/////////////////////////////////*/
-
+  
 
 /*Footer*/
 @media screen and (max-width: 736px)
@@ -447,7 +269,7 @@ nav a:hover
     }
 }
 .footer{
-    position: absolute;
+    position: fixed;
     bottom:0;
     left:0;
     right:0;

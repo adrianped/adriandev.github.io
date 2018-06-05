@@ -122,7 +122,7 @@ nav a:hover
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 1800px)
+@media screen and (min-width: 1300px)
 {
     .nav-toggle-label
     {
@@ -186,21 +186,22 @@ nav a:hover
     }
 }
 
-
 .wrapper
 {
     background-color: #f2f2f2;
     color: #a6a6a6;
     padding: 5rem 0 10rem 0;
     position: relative;
-    margin: 100px 0 0 0;
+    top: 100px;
+    height: 100%;
 }
+
 .wrapper > .inner{
     margin: 0 auto;
     width: 80rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1550px) {
 
     .wrapper > .inner {
         width: 75rem;
@@ -254,7 +255,7 @@ p
     }
 }
 .footer{
-    position: absolute;
+    position: fixed;
     bottom:0;
     left:0;
     right:0;
@@ -266,8 +267,13 @@ p
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 10px 3px 0 0;
+    padding: 10px 0 0 0;
     
+}
+
+.footer li
+{
+    margin-left: 10px;
 }
 
 .copyright
